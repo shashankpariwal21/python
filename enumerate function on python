@@ -1,0 +1,35 @@
+marks= (22,33,44,55,66)
+>>> 
+>>> for index, mark in enumerate(marks):
+...     print(mark)
+...     if(index==2):
+...         print("shashank got that")
+... 
+...         
+22
+33
+44
+shashank got that
+55
+66
+>>> for index, mark in enumerate(marks,start=1):
+...     print(mark)
+...     if(index==2):
+...         print("shashank got that")
+... 
+...         
+22
+33
+shashank got that
+44
+55
+66
+>>> ## enumerate function allows to loop over a sequence such as (list ,tuple or string)
+>>> fruits=[mango,peach,apple]
+Traceback (most recent call last):
+  File "<pyshell#11>", line 1, in <module>
+    fruits=[mango,peach,apple]
+NameError: name 'mango' is not defined. Did you mean: 'range'?
+>>> fruits=["mango","peach","apple"]
+>>> for index, fruit in enumerate(fruits):
+...     print(index,fruit)
