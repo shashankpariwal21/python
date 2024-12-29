@@ -1,0 +1,10 @@
+import shashank
+
+shashank.welcome()
+## importing modules from other file while taking if __name__==__main__
+def welcome():
+    print("hey im good")
+
+print(__name__)    
+if __name__=="__main__":
+ welcome()    
